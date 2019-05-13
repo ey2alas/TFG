@@ -1,4 +1,4 @@
-# Twitter for EPAW subject
+# CONFIGS PARA TFG
 
 Web service similar to Twitter using jsp and servlets technologies.
 
