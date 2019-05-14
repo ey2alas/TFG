@@ -1,0 +1,19 @@
+# CONFIGURACIÓ CABLEJADA R1
+
+Seguidament farem una explicació de la configuració de R1
+
+## Bridges
+
+```
+/interface bridge
+add name=bridge
+add name=loopback
+```
+### Prerequisites
+
+What things you need to install the software and how to install them
+
+```
+Give examples
+```
+© 2019 GitHub, Inc.
