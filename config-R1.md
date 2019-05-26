@@ -39,11 +39,11 @@ set [ find default-name=ether10 ] advertise=\
 ## VPLS
 ```
 /interface vpls
-add disabled=no l2mtu=1500 mac-address=02:95:BC:84:86:C0 name=vpls-R1R2 \
+add disabled=no l2mtu=1504 mac-address=02:95:BC:84:86:C0 name=vpls-R1R2 \
     remote-peer=2.2.2.2 vpls-id=1:2
-add disabled=no l2mtu=1500 mac-address=02:95:BC:84:86:C0 name=vpls-R1R3 \
+add disabled=no l2mtu=1504 mac-address=02:95:BC:84:86:C0 name=vpls-R1R3 \
     remote-peer=3.3.3.3 vpls-id=1:3
-add disabled=no l2mtu=1500 mac-address=02:95:BC:84:86:C0 name=vpls-R1R4 \
+add disabled=no l2mtu=1504 mac-address=02:95:BC:84:86:C0 name=vpls-R1R4 \
     remote-peer=4.4.4.4 vpls-id=1:4
 ```
 ## VLAN
