@@ -212,24 +212,24 @@ add interface=loopback network-type=broadcast
 add area=backbone network=10.30.0.0/30
 add area=backbone network=10.10.0.0/30
 ```
-##R1
+### R1
 
 ```
 /ip address
 add address=1.1.1.1 interface=loopback network=1.1.1.1
 ```
-##R2
+### R2
 
 ```
 /ip address
 add address=2.2.2.2 interface=loopback network=2.2.2.2
 ```
-##R3
+### R3
 ```
 /ip address
 add address=3.3.3.3 interface=loopback network=3.3.3.3
 ```
-##R4
+### R4
 ```
 /ip address
 add address=4.4.4.4 interface=loopback network=4.4.4.4
