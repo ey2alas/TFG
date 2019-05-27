@@ -239,12 +239,18 @@ add address=4.4.4.4 interface=loopback network=4.4.4.4
 
 
 ```
-[admin@2011 - R1] > routing ospf instance print
-Flags: X - disabled, * - default 
- 0  * name="default" router-id=1.1.1.1 distribute-default=always-as-type-1 
-      redistribute-connected=as-type-1 redistribute-static=no 
-      authentication=none authentication-key="" authentication-key-id=1 cost=10 \
-      dead-interval=40s disabled=no hello-interval=10s instance-id=0 interface=\
-      loopback network-type=broadcast passive=no priority=1 \
-      retransmit-interval=5s transmit-delay=1s use-bfd=no     
+/caps-man configuration
+add channel.band=2ghz-g/n channel.tx-power=-30 country=spain datapath.bridge=\
+    bridge datapath.local-forwarding=yes datapath.mtu=1492 datapath.vlan-id=\
+    10 datapath.vlan-mode=use-tag mode=ap name="2.4GHz PPPoE" ssid=\
+    "TFG 2.4GHz PPPoE"
+add channel.tx-power=-15 country=spain datapath.bridge=bridge \
+    datapath.local-forwarding=yes datapath.mtu=1492 mode=ap name=\
+    "2.4GHz DHCP" ssid="TFG 2.4GHz DHCP"
+add channel.band=5ghz-a/n/ac channel.frequency=5370 country=spain \
+    datapath.bridge=bridge datapath.local-forwarding=yes mode=ap name=\
+    "5GHz DHCP" ssid="TFG 5GHz DHCP"
+add channel.band=5ghz-a/n/ac country=spain datapath.bridge=bridge \
+    datapath.local-forwarding=yes datapath.vlan-id=10 datapath.vlan-mode=\
+    use-tag mode=ap name="5GHz DHCP PPPoE" ssid="TFG 5GHz PPPoE"    
 ```
