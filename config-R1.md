@@ -234,3 +234,18 @@ add address=3.3.3.3 interface=loopback network=3.3.3.3
 /ip address
 add address=4.4.4.4 interface=loopback network=4.4.4.4
 ```
+
+
+
+
+```
+[admin@2011 - R1] > routing ospf instance print
+Flags: X - disabled, * - default 
+ 0  * name="default" router-id=1.1.1.1 distribute-default=always-as-type-1 
+      redistribute-connected=as-type-1 redistribute-static=no 
+      redistribute-rip=no redistribute-bgp=no redistribute-other-ospf=no 
+      metric-default=1 metric-connected=20 metric-static=20 metric-rip=20 
+      metric-bgp=auto metric-other-ospf=auto in-filter=ospf-in 
+      out-filter=ospf-out 
+      
+```
