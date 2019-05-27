@@ -3,6 +3,7 @@
 #
 # model = 2011UiAS-2HnD r2
 # serial number = 91DE092C453F
+```
 /routing ospf interface
 add authentication=none authentication-key="" authentication-key-id=1 cost=10 \
     dead-interval=40s disabled=no hello-interval=10s instance-id=0 interface=\
