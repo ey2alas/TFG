@@ -253,4 +253,25 @@ add channel.band=5ghz-a/n/ac channel.frequency=5370 country=spain \
 add channel.band=5ghz-a/n/ac country=spain datapath.bridge=bridge \
     datapath.local-forwarding=yes datapath.vlan-id=10 datapath.vlan-mode=\
     use-tag mode=ap name="5GHz DHCP PPPoE" ssid="TFG 5GHz PPPoE"    
+
+
+
+
+
+
+
+                            enabled: yes
+                         interfaces: wlan2
+                        certificate: none
+                   lock-to-caps-man: no
+               discovery-interfaces: bridge
+                 caps-man-addresses: 
+                     caps-man-names: 
+  caps-man-certificate-common-names: 
+                             bridge: bridge
+                     static-virtual: no
+[admin@hAP - R3] > 
+
+
+
 ```
