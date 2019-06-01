@@ -32,10 +32,14 @@ add authentication-types=wpa-psk,wpa2-psk eap-methods="" \
     management-protection=allowed mode=dynamic-keys name=paswd-5GHz \
     supplicant-identity="" wpa-pre-shared-key=12345678 wpa2-pre-shared-key=\
     12345678
+
+#Wireless interface R2
+```
 /interface wireless
 set [ find default-name=wlan2 ] band=5ghz-a/n/ac disabled=no frequency=auto \
     mode=ap-bridge security-profile=paswd-5GHz ssid=LinkR2R3-5G \
     wireless-protocol=802.11
+```
 /ip hotspot profile
 set [ find default=yes ] html-directory=flash/hotspot
 /routing ospf instance
