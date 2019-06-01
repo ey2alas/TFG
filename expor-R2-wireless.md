@@ -33,7 +33,7 @@ add authentication-types=wpa-psk,wpa2-psk eap-methods="" \
     supplicant-identity="" wpa-pre-shared-key=12345678 wpa2-pre-shared-key=\
     12345678
 
-# Wireless interface R2
+### Wireless interface R2
 ```
 /interface wireless
 set [ find default-name=wlan2 ] band=5ghz-a/n/ac disabled=no frequency=auto \
