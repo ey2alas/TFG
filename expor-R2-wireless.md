@@ -1,4 +1,4 @@
-# CONFIGURACIÓ R2
+# Configuració R2 Wireless
 
 ```
 # may/14/2019 11:50:30 by RouterOS 6.43.13
