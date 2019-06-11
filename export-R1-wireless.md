@@ -74,10 +74,6 @@ add address-pool=dhcp_pool3 disabled=no interface=vlan10 lease-time=10s name=\
     dhcp2
  
 ```
-
-/ppp profile
-set *FFFFFFFE remote-address=dhcp_pool3
-
 ## OSPF
 ```
 /routing ospf instance
@@ -168,7 +164,7 @@ add interface=ether9
 add local-address=10.0.0.1 name=prueba password=prueba profile=\
     default-encryption service=pppoe
 ```
-
+## Log & Info
 ```
 /system clock
 set time-zone-name=Europe/Madrid
