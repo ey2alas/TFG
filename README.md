@@ -1,4 +1,4 @@
-# CONFIGS PARA TFG
+# CONFIGURACIÓ DELS EQUIPS
 
 Web service similar to Twitter using jsp and servlets technologies.
 
