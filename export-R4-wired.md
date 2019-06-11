@@ -32,7 +32,7 @@ add disabled=no l2mtu=1500 mac-address=02:FE:92:1C:F4:B6 name=vpls-R4R1 \
 /interface wireless security-profiles
 set [ find default=yes ] supplicant-identity=MikroTik
 ## OSPF
-``
+```
 /routing ospf instance
 set [ find default=yes ] redistribute-connected=as-type-1 router-id=4.4.4.4
 /routing ospf interface
