@@ -1,3 +1,4 @@
+# Configuració R3 Wireless
 ```
 # jan/13/1970 23:53:57 by RouterOS 6.43.13
 # software id = J2KV-LQXT
