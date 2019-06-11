@@ -11,6 +11,10 @@
 /interface bridge
 add name=bridge
 add name=loopback
+/interface bridge port
+add bridge=bridge interface=vpls-R4R1
+/interface wireless cap
+set bridge=bridge discovery-interfaces=bridge enabled=yes interfaces=wlan1
 ```
 
 ## CAPs
@@ -19,6 +23,8 @@ add name=loopback
 # managed by CAPsMAN
 # channel: 2452/20-Ce/gn(-30dBm), SSID: TFG 2.4GHz PPPoE, local forwarding
 set [ find default-name=wlan1 ] disabled=no ssid=MikroTik
+/interface wireless security-profiles
+set [ find default=yes ] supplicant-identity=MikroTik
 ```
 ## VPLS
 ```
@@ -26,8 +32,6 @@ set [ find default-name=wlan1 ] disabled=no ssid=MikroTik
 add disabled=no l2mtu=1500 mac-address=02:FE:92:1C:F4:B6 name=vpls-R4R1 \
     remote-peer=1.1.1.1 vpls-id=1:4
 ```
-/interface wireless security-profiles
-set [ find default=yes ] supplicant-identity=MikroTik
 ## OSPF
 ```
 /routing ospf instance
@@ -37,14 +41,7 @@ add interface=ether1 network-type=broadcast
 /routing ospf network
 add area=backbone network=10.40.0.0/30
 ```
-## Bridge
-```
-/interface bridge port
-add bridge=bridge interface=vpls-R4R1
-add bridge=bridge interface=ether2
-/interface wireless cap
-set bridge=bridge discovery-interfaces=bridge enabled=yes interfaces=wlan1
-```
+
 ## IP addresses
 ```
 /ip address
