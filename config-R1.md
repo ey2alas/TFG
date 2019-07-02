@@ -182,7 +182,6 @@ add address=192.168.10.0/24 gateway=192.168.10.1
 /ip firewall nat
 add action=masquerade chain=srcnat src-address=172.21.7.0/24
 add action=masquerade chain=srcnat src-address=192.168.5.0/24
-add action=masquerade chain=srcnat src-address=10.10.0.0/30
 ```
 
 ## mpls
