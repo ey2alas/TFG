@@ -238,40 +238,4 @@ add address=4.4.4.4 interface=loopback network=4.4.4.4
 
 
 
-```
-/caps-man configuration
-add channel.band=2ghz-g/n channel.tx-power=-30 country=spain datapath.bridge=\
-    bridge datapath.local-forwarding=yes datapath.mtu=1492 datapath.vlan-id=\
-    10 datapath.vlan-mode=use-tag mode=ap name="2.4GHz PPPoE" ssid=\
-    "TFG 2.4GHz PPPoE"
-add channel.tx-power=-15 country=spain datapath.bridge=bridge \
-    datapath.local-forwarding=yes datapath.mtu=1492 mode=ap name=\
-    "2.4GHz DHCP" ssid="TFG 2.4GHz DHCP"
-add channel.band=5ghz-a/n/ac channel.frequency=5370 country=spain \
-    datapath.bridge=bridge datapath.local-forwarding=yes mode=ap name=\
-    "5GHz DHCP" ssid="TFG 5GHz DHCP"
-add channel.band=5ghz-a/n/ac country=spain datapath.bridge=bridge \
-    datapath.local-forwarding=yes datapath.vlan-id=10 datapath.vlan-mode=\
-    use-tag mode=ap name="5GHz DHCP PPPoE" ssid="TFG 5GHz PPPoE"    
 
-
-
-
-
-
-
-                            enabled: yes
-                         interfaces: wlan2
-                        certificate: none
-                   lock-to-caps-man: no
-               discovery-interfaces: bridge
-                 caps-man-addresses: 
-                     caps-man-names: 
-  caps-man-certificate-common-names: 
-                             bridge: bridge
-                     static-virtual: no
-[admin@hAP - R3] > 
-
-
-
-```
